@@ -13,15 +13,26 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.App-body {
+  background-color: #ff7b17;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(36, 34, 34);
+}
+
+.App-header {
+  background-color: #2f2a75;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(243, 241, 241);
 }
 
 .App-link {
