@@ -18,7 +18,7 @@ function App() {
       <Toolbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/lead-main" element={<MainLeadForm />} />
+        <Route path="/lead" element={<MainLeadForm />} />
       </Routes>
       <br />
       {/* <div className="App-body">
