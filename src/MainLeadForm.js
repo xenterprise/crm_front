@@ -49,19 +49,18 @@ function MainLeadForm() {
             mx: 5,
           }}
         >
+
           <Box
             sx={{
               maxWidth: 400,
             }}
           >
-            <Card sx={{ mx: 1 }}>
+            <Card sx={{ px: 2 }}>
               <CardHeader
                 avatar={
-                  <>
-                    <Avatar sx={{ bgcolor: "#FF7B17" }} aria-label="recipe">
-                      <PersonIcon />
-                    </Avatar>
-                  </>
+                  <Avatar sx={{ bgcolor: "#FF7B17" }} aria-label="recipe">
+                    <ApartmentIcon />
+                  </Avatar>
                 }
                 action={
                   <IconButton aria-label="settings">
@@ -172,12 +171,14 @@ function MainLeadForm() {
               maxWidth: 400,
             }}
           >
-            <Card sx={{ px: 2 }}>
+            <Card sx={{ mx: 1 }}>
               <CardHeader
                 avatar={
-                  <Avatar sx={{ bgcolor: "#FF7B17" }} aria-label="recipe">
-                    <ApartmentIcon />
-                  </Avatar>
+                  <>
+                    <Avatar sx={{ bgcolor: "#FF7B17" }} aria-label="recipe">
+                      <PersonIcon />
+                    </Avatar>
+                  </>
                 }
                 action={
                   <IconButton aria-label="settings">
@@ -203,7 +204,7 @@ function MainLeadForm() {
                   fullWidth
                   color="secondary"
                   id="payment-ref"
-                  label="Email"
+                  label="License"
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
@@ -214,7 +215,51 @@ function MainLeadForm() {
                   fullWidth
                   color="secondary"
                   id="payment-ref"
-                  label="Status"
+                  label="SR"
+                  //   defaultValue=" "
+                  //helperText="Placeholder for error"
+                  sx={{
+                    my: 2,
+                  }}
+                />
+                <TextField
+                  fullWidth
+                  color="secondary"
+                  id="payment-ref"
+                  label="Validity"
+                  //   defaultValue=" "
+                  //helperText="Placeholder for error"
+                  sx={{
+                    my: 2,
+                  }}
+                />
+                <TextField
+                  fullWidth
+                  color="secondary"
+                  id="payment-ref"
+                  label="Phone"
+                  //   defaultValue=" "
+                  //helperText="Placeholder for error"
+                  sx={{
+                    my: 2,
+                  }}
+                />
+                <TextField
+                  fullWidth
+                  color="secondary"
+                  id="payment-ref"
+                  label="Fax"
+                  //   defaultValue=" "
+                  //helperText="Placeholder for error"
+                  sx={{
+                    my: 2,
+                  }}
+                />
+                <TextField
+                  fullWidth
+                  color="secondary"
+                  id="payment-ref"
+                  label="Email"
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
@@ -247,29 +292,73 @@ function MainLeadForm() {
                   fullWidth
                   color="secondary"
                   id="payment-ref"
-                  label="State/Province"
+                  label="Email"
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
                     my: 2,
                   }}
                 />
-                <TextField
+                 <TextField
                   fullWidth
                   color="secondary"
                   id="payment-ref"
-                  label="Phone"
+                  label="Country"
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
                     my: 2,
                   }}
                 />
-                <TextField
+                 <TextField
                   fullWidth
                   color="secondary"
                   id="payment-ref"
-                  label="Cell"
+                  label="NTN"
+                  //   defaultValue=" "
+                  //helperText="Placeholder for error"
+                  sx={{
+                    my: 2,
+                  }}
+                />
+                 <TextField
+                  fullWidth
+                  color="secondary"
+                  id="payment-ref"
+                  label="INC_Number"
+                  //   defaultValue=" "
+                  //helperText="Placeholder for error"
+                  sx={{
+                    my: 2,
+                  }}
+                />
+                 <TextField
+                  fullWidth
+                  color="secondary"
+                  id="payment-ref"
+                  label="PEC_Number"
+                  //   defaultValue=" "
+                  //helperText="Placeholder for error"
+                  sx={{
+                    my: 2,
+                  }}
+                />
+                 <TextField
+                  fullWidth
+                  color="secondary"
+                  id="payment-ref"
+                  label="GST_Number"
+                  //   defaultValue=" "
+                  //helperText="Placeholder for error"
+                  sx={{
+                    my: 2,
+                  }}
+                />
+                 <TextField
+                  fullWidth
+                  color="secondary"
+                  id="payment-ref"
+                  label="GST_Effective_Date"
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
@@ -282,6 +371,7 @@ function MainLeadForm() {
               </CardActions>
             </Card>
           </Box>
+
           <Box
             sx={{
               maxWidth: 400,
