@@ -397,7 +397,7 @@ function MainLeadForm() {
                   fullWidth
                   color="secondary"
                   id="1"
-                  label="Name"
+                  label="Tracking_Code"
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
@@ -408,7 +408,7 @@ function MainLeadForm() {
                   fullWidth
                   color="secondary"
                   id="payment-ref"
-                  label="Email"
+                  label="Service_Type"
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
@@ -419,7 +419,7 @@ function MainLeadForm() {
                   fullWidth
                   color="secondary"
                   id="payment-ref"
-                  label="Status"
+                  label="Agreement_Date"
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
@@ -430,7 +430,7 @@ function MainLeadForm() {
                   fullWidth
                   color="secondary"
                   id="payment-ref"
-                  label="Address"
+                  label="Service_Details"
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
@@ -441,7 +441,7 @@ function MainLeadForm() {
                   fullWidth
                   color="secondary"
                   id="payment-ref"
-                  label="City"
+                  label="Total_Payment"
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
@@ -452,7 +452,7 @@ function MainLeadForm() {
                   fullWidth
                   color="secondary"
                   id="payment-ref"
-                  label="State/Province"
+                  label="Date_Time"
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
@@ -463,7 +463,7 @@ function MainLeadForm() {
                   fullWidth
                   color="secondary"
                   id="payment-ref"
-                  label="Phone"
+                  label="Employee"
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
@@ -474,7 +474,7 @@ function MainLeadForm() {
                   fullWidth
                   color="secondary"
                   id="payment-ref"
-                  label="Cell"
+                  label="Log"
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
