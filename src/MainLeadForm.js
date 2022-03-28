@@ -30,12 +30,24 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import PersonIcon from "@mui/icons-material/Person";
 import ApartmentIcon from "@mui/icons-material/Apartment";
 import AccountTreeIcon from "@mui/icons-material/AccountTree";
+import Stack from '@mui/material/Stack';
+import PhotoCamera from '@mui/icons-material/PhotoCamera';
+import { styled } from '@mui/material/styles';
 
 import Theme from "./theme";
 import { DesktopDatePicker } from "@mui/lab";
 
+
 function MainLeadForm() {
   const [date, setDate] = React.useState(new Date());
+  const [age, setAge] = React.useState('');
+  const handleChange=(event)=> {
+
+    setAge(event.target.value)
+  }
+  const Input = styled('input')({
+    display: 'none',
+  });
 
   return (
     <div>
@@ -71,6 +83,40 @@ function MainLeadForm() {
                 // subheader="September 14, 2016"
               />
               <CardContent>
+              
+        <Box
+            sx={{
+              
+              display: 'flex',
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+            }}
+          >
+            <FormControl fullWidth>
+            <InputLabel id="demo-simple-select-label">Age</InputLabel>
+        <Select
+           fullWidth
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          value={age}
+          label="Contact"
+          onChange={handleChange}
+        >
+          <MenuItem value={10}>Ten</MenuItem>
+          <MenuItem value={20}>Twenty</MenuItem>
+          <MenuItem value={30}>Thirty</MenuItem>
+        </Select>
+        </FormControl>
+      
+        <IconButton color="primary" aria-label="upload picture" component="span">
+          <PhotoCamera />
+        </IconButton>
+        
+
+
+</Box>
+    
+
                 <TextField
                   fullWidth
                   color="secondary"
@@ -79,7 +125,8 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    mt: 1,
+                    mb:0.5
                   }}
                 />
                 <TextField
@@ -90,7 +137,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
                 <TextField
@@ -101,7 +148,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
                 <TextField
@@ -112,7 +159,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
                 <TextField
@@ -123,7 +170,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
                 <TextField
@@ -134,7 +181,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
                 <TextField
@@ -145,7 +192,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
                 <TextField
@@ -156,7 +203,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
               </CardContent>
@@ -189,6 +236,18 @@ function MainLeadForm() {
                 // subheader="September 14, 2016"
               />
               <CardContent>
+              <Select
+              fullWidth
+    labelId="demo-simple-select-label"
+    id="demo-simple-select"
+    value={age}
+    label="Age"
+    onChange={handleChange}
+  >
+    <MenuItem value={10}>Ten</MenuItem>
+    <MenuItem value={20}>Twenty</MenuItem>
+    <MenuItem value={30}>Thirty</MenuItem>
+  </Select>
                 <TextField
                   fullWidth
                   color="secondary"
@@ -197,7 +256,8 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    mt: 1,
+                    mb:0.5
                   }}
                 />
                 <TextField
@@ -208,7 +268,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
                 <TextField
@@ -219,7 +279,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
                 <TextField
@@ -230,7 +290,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
                 <TextField
@@ -241,7 +301,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
                 <TextField
@@ -252,7 +312,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
                 <TextField
@@ -263,7 +323,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
                 <TextField
@@ -274,7 +334,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
                 <TextField
@@ -285,7 +345,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
                 <TextField
@@ -296,7 +356,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
                  <TextField
@@ -307,7 +367,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
                  <TextField
@@ -318,7 +378,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
                  <TextField
@@ -329,7 +389,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
                  <TextField
@@ -340,7 +400,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
                  <TextField
@@ -351,7 +411,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
                  <TextField
@@ -362,7 +422,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
               </CardContent>
@@ -393,6 +453,18 @@ function MainLeadForm() {
                 // subheader="September 14, 2016"
               />
               <CardContent>
+              <Select
+              fullWidth
+    labelId="demo-simple-select-label"
+    id="demo-simple-select"
+    value={age}
+    label="Age"
+    onChange={handleChange}
+  >
+    <MenuItem value={10}>Ten</MenuItem>
+    <MenuItem value={20}>Twenty</MenuItem>
+    <MenuItem value={30}>Thirty</MenuItem>
+  </Select>
                 <TextField
                   fullWidth
                   color="secondary"
@@ -401,7 +473,8 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    mt: 1,
+                    mb:0.5
                   }}
                 />
                 <TextField
@@ -412,7 +485,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
                 <TextField
@@ -423,7 +496,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
                 <TextField
@@ -434,7 +507,7 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
                 <TextField
@@ -445,42 +518,10 @@ function MainLeadForm() {
                   //   defaultValue=" "
                   //helperText="Placeholder for error"
                   sx={{
-                    my: 2,
+                    my: 0.5,
                   }}
                 />
-                <TextField
-                  fullWidth
-                  color="secondary"
-                  id="payment-ref"
-                  label="Date_Time"
-                  //   defaultValue=" "
-                  //helperText="Placeholder for error"
-                  sx={{
-                    my: 2,
-                  }}
-                />
-                <TextField
-                  fullWidth
-                  color="secondary"
-                  id="payment-ref"
-                  label="Employee"
-                  //   defaultValue=" "
-                  //helperText="Placeholder for error"
-                  sx={{
-                    my: 2,
-                  }}
-                />
-                <TextField
-                  fullWidth
-                  color="secondary"
-                  id="payment-ref"
-                  label="Log"
-                  //   defaultValue=" "
-                  //helperText="Placeholder for error"
-                  sx={{
-                    my: 2,
-                  }}
-                />
+
               </CardContent>
               <CardActions>
                 <Button size="small">Save</Button>
